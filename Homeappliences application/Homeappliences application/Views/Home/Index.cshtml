@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using System.Security.Policy
+@using Antlr.Runtime.Tree
+@using Homeappliences_application.Models
+@model Homeappliences_application.Models.product
+
+<div class="jumbotron">
+    <h1>HomeKart</h1>
+    <h3>One Destination for all your Home Appliances</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Lowest Prices</h2>
+        <p>
+            Lowest price in market
+        </p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>Shop more CashBack more</h2>
+        <p>Get cashbacks for every purchase u make.</p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>Free Delivery</h2>
+        <p>Enjoy our free delevery with no minimum charges</p>
+
+    </div>
+    @*@foreach (var item in product)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"> @Html.DisplayFor(modelItem => item.product1)</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    }*@
+</div>
